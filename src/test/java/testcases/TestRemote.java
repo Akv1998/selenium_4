@@ -15,7 +15,7 @@ public class TestRemote {
 
 		ChromeOptions opt = new ChromeOptions();
 		
-		WebDriver driver = new RemoteWebDriver(new URL("http://192.168.1.17:4444"),opt);
+		WebDriver driver = new RemoteWebDriver(new URL("http://54.221.191.123:4444"),opt);
 		driver.get("http://google.com");
 		driver.findElement(By.name("q")).sendKeys("Hello Grid !!!");
 		Thread.sleep(10000);
